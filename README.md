@@ -1,6 +1,6 @@
 # ZENITH — Alternative Credit Scoring System
 
-> Score every applicant fairly — including those with no prior loan history — using 80 AI-engineered features trained on 1.8 million real loan records.
+> Score every applicant fairly — including those with no prior loan history — using 80 engineered features trained on 1.8 million real loan records.
 
 ---
 
@@ -30,7 +30,7 @@ zenith/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1 — Clone
 ```bash
@@ -71,7 +71,7 @@ npm start
 
 ---
 
-## 🔑 Demo Credentials
+##  Demo Credentials
 
 | Email | Password | Role |
 |---|---|---|
@@ -81,7 +81,7 @@ npm start
 
 ---
 
-## 📊 Model Performance
+## Model Performance
 
 | Metric | Value | Interpretation |
 |---|---|---|
@@ -91,7 +91,7 @@ npm start
 
 ---
 
-## 🗃️ Datasets Used
+## Datasets Used
 
 | Dataset | Rows | Source |
 |---|---|---|
@@ -103,7 +103,7 @@ npm start
 
 ---
 
-## 🔍 Feature Categories (80 total)
+## Feature Categories (80 total)
 
 1. Income & Loan (10) — affordability ratios
 2. Alternative Signals (14) — savings, bank account, external scores
@@ -115,7 +115,7 @@ npm start
 
 ---
 
-## 🆕 New User Mode
+## New User Mode
 
 Users with zero loan history are scored using alternative signals only:
 - Bank account balance tier
@@ -128,23 +128,12 @@ LightGBM handles missing loan-history features natively via learned default bin 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **ML Pipeline:** Python, LightGBM, SHAP, scikit-learn, pandas  
 **Backend:** FastAPI, JWT auth, Pydantic, Uvicorn  
 **Frontend:** React 18, React Router v6, Framer Motion, CSS Modules  
 **Charts:** Canvas API (gauge), Recharts  
-
----
-
-## 📄 API Endpoints
-
-| Method | Endpoint | Description |
-|---|---|---|
-| POST | /api/auth/login | Login, returns JWT |
-| GET | /api/auth/me | Get current user |
-| POST | /api/score | Calculate credit score |
-| GET | /api/health | Model health check |
 
 ---
 
