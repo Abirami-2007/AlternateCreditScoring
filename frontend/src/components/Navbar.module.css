@@ -1,0 +1,59 @@
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.88);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+.inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; align-items: center; gap: 2rem;
+  padding: .875rem 2rem;
+}
+.brand {
+  display: flex; align-items: center; gap: .6rem;
+  background: none; border: none; cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+}
+.logo {
+  width: 32px; height: 32px;
+  background: var(--ink);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  color: var(--gold); font-size: 1.1rem;
+}
+.brand span {
+  font-weight: 700; font-size: .9rem;
+  letter-spacing: .1em; color: var(--ink);
+}
+.links { display: flex; gap: .25rem; flex: 1; }
+.link {
+  display: flex; align-items: center; gap: .4rem;
+  padding: .45rem .9rem;
+  border-radius: 8px; border: none; background: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: .875rem; font-weight: 500;
+  color: var(--muted); cursor: pointer;
+  transition: all var(--transition);
+}
+.link:hover { background: var(--surface); color: var(--ink); }
+.active { background: var(--ink) !important; color: var(--white) !important; }
+.right { display: flex; align-items: center; gap: 1rem; margin-left: auto; }
+.user { display: flex; align-items: center; gap: .75rem; }
+.avatar {
+  width: 34px; height: 34px;
+  background: var(--gold); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: .875rem; color: var(--ink);
+}
+.userInfo { display: flex; flex-direction: column; }
+.userName { font-size: .875rem; font-weight: 600; color: var(--ink); }
+.userRole { font-size: .72rem; color: var(--muted); text-transform: capitalize; }
+.logout {
+  display: flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px;
+  border: 1.5px solid var(--border); border-radius: 8px;
+  background: none; cursor: pointer; color: var(--muted);
+  transition: all var(--transition);
+}
+.logout:hover { border-color: var(--ruby); color: var(--ruby); }
