@@ -141,7 +141,7 @@ def scale_features(df, feature_cols):
     scaler = RobustScaler()
     df[feature_cols] = scaler.fit_transform(df[feature_cols])
     joblib.dump(scaler, "models/feature_scaler.pkl")
-    print(f"  ✅ Scaler saved: models/feature_scaler.pkl")
+    print(f"   Scaler saved: models/feature_scaler.pkl")
     return df, scaler
 
 
@@ -149,7 +149,7 @@ def scale_features(df, feature_cols):
 # PLOT — Preprocessing Report
 # ================================================================
 def plot_preprocessing_report(df_before, df_after, feature_cols):
-    print("\n📊 Generating preprocessing report plots...")
+    print("\n Generating preprocessing report plots...")
     os.makedirs("outputs/eda_plots", exist_ok=True)
     fig, axes = plt.subplots(2, 2, figsize=(16, 12))
     fig.suptitle("Preprocessing Report", fontsize=14, fontweight="bold")
